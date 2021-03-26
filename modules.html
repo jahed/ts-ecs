@@ -1,0 +1,1062 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>@jahed/ts-ecs</title>
+	<meta name="description" content="Documentation for @jahed/ts-ecs">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">@jahed/ts-ecs</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>@jahed/ts-ecs</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#component" class="tsd-kind-icon">Component</a></li>
+								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#componenttemplate" class="tsd-kind-icon">Component<wbr>Template</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#ecs" class="tsd-kind-icon">ECS</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#engine" class="tsd-kind-icon">Engine</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#entity" class="tsd-kind-icon">Entity</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#entitymanager" class="tsd-kind-icon">Entity<wbr>Manager</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#milliseconds" class="tsd-kind-icon">Milliseconds</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#space" class="tsd-kind-icon">Space</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#system" class="tsd-kind-icon">System</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#systemmanager" class="tsd-kind-icon">System<wbr>Manager</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#task" class="tsd-kind-icon">Task</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#tasks" class="tsd-kind-icon">Tasks</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#createcomponent" class="tsd-kind-icon">create<wbr>Component</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#createengine" class="tsd-kind-icon">create<wbr>Engine</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#createentity" class="tsd-kind-icon">create<wbr>Entity</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#createspace" class="tsd-kind-icon">create<wbr>Space</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#createsystem" class="tsd-kind-icon">create<wbr>System</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#definecomponent" class="tsd-kind-icon">define<wbr>Component</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
+					<a name="component" class="tsd-anchor"></a>
+					<h3>Component</h3>
+					<div class="tsd-signature tsd-kind-icon">Component&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/jahed/ts-ecs/blob/aa5adcf/src/types.ts#L22">types.ts:22</a></li>
+						</ul>
+					</aside>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>T = <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
+					<a name="componenttemplate" class="tsd-anchor"></a>
+					<h3>Component<wbr>Template</h3>
+					<div class="tsd-signature tsd-kind-icon">Component<wbr>Template&lt;T, P&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/jahed/ts-ecs/blob/aa5adcf/src/types.ts#L7">types.ts:7</a></li>
+						</ul>
+					</aside>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>T</h4>
+						</li>
+						<li>
+							<h4>P = <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="ecs" class="tsd-anchor"></a>
+					<h3>ECS</h3>
+					<div class="tsd-signature tsd-kind-icon">ECS<span class="tsd-signature-symbol">:</span> <a href="modules.html#entitymanager" class="tsd-signature-type" data-tsd-kind="Type alias">EntityManager</a><span class="tsd-signature-symbol"> &amp; </span><a href="modules.html#systemmanager" class="tsd-signature-type" data-tsd-kind="Type alias">SystemManager</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/jahed/ts-ecs/blob/aa5adcf/src/types.ts#L62">types.ts:62</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="engine" class="tsd-anchor"></a>
+					<h3>Engine</h3>
+					<div class="tsd-signature tsd-kind-icon">Engine<span class="tsd-signature-symbol">:</span> <a href="modules.html#ecs" class="tsd-signature-type" data-tsd-kind="Type alias">ECS</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>update<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>elapsedMS<span class="tsd-signature-symbol">: </span><a href="modules.html#milliseconds" class="tsd-signature-type" data-tsd-kind="Type alias">Milliseconds</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/jahed/ts-ecs/blob/aa5adcf/src/types.ts#L66">types.ts:66</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="entity" class="tsd-anchor"></a>
+					<h3>Entity</h3>
+					<div class="tsd-signature tsd-kind-icon">Entity<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>addComponent<span class="tsd-signature-symbol">: </span>&lt;T&gt;<span class="tsd-signature-symbol">(</span>component<span class="tsd-signature-symbol">: </span><a href="modules.html#component" class="tsd-signature-type" data-tsd-kind="Type alias">Component</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a><span class="tsd-signature-symbol">; </span>components<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="modules.html#component" class="tsd-signature-type" data-tsd-kind="Type alias">Component</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>getComponent<span class="tsd-signature-symbol">: </span>&lt;T, P&gt;<span class="tsd-signature-symbol">(</span>template<span class="tsd-signature-symbol">: </span><a href="modules.html#componenttemplate" class="tsd-signature-type" data-tsd-kind="Type alias">ComponentTemplate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="modules.html#component" class="tsd-signature-type" data-tsd-kind="Type alias">Component</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>hasComponent<span class="tsd-signature-symbol">: </span>&lt;T, P&gt;<span class="tsd-signature-symbol">(</span>template<span class="tsd-signature-symbol">: </span><a href="modules.html#componenttemplate" class="tsd-signature-type" data-tsd-kind="Type alias">ComponentTemplate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/jahed/ts-ecs/blob/aa5adcf/src/types.ts#L9">types.ts:9</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>add<wbr>Component<span class="tsd-signature-symbol">: </span>&lt;T&gt;<span class="tsd-signature-symbol">(</span>component<span class="tsd-signature-symbol">: </span><a href="modules.html#component" class="tsd-signature-type" data-tsd-kind="Type alias">Component</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a></h5>
+								<div class="tsd-comment tsd-typography">
+									<dl class="tsd-comment-tags">
+										<dt>deprecated</dt>
+										<dd><p>Only use for building entities. Not in game loop.</p>
+										</dd>
+									</dl>
+								</div>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal tsd-has-type-parameter">
+											<li class="tsd-signature tsd-kind-icon">&lt;T&gt;<span class="tsd-signature-symbol">(</span>component<span class="tsd-signature-symbol">: </span><a href="modules.html#component" class="tsd-signature-type" data-tsd-kind="Type alias">Component</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-type-parameters-title">Type parameters</h4>
+												<ul class="tsd-type-parameters">
+													<li>
+														<h4>T</h4>
+													</li>
+												</ul>
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>component: <a href="modules.html#component" class="tsd-signature-type" data-tsd-kind="Type alias">Component</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>components<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="modules.html#component" class="tsd-signature-type" data-tsd-kind="Type alias">Component</a><span class="tsd-signature-symbol">&gt;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>get<wbr>Component<span class="tsd-signature-symbol">: </span>&lt;T, P&gt;<span class="tsd-signature-symbol">(</span>template<span class="tsd-signature-symbol">: </span><a href="modules.html#componenttemplate" class="tsd-signature-type" data-tsd-kind="Type alias">ComponentTemplate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="modules.html#component" class="tsd-signature-type" data-tsd-kind="Type alias">Component</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal tsd-has-type-parameter">
+											<li class="tsd-signature tsd-kind-icon">&lt;T, P&gt;<span class="tsd-signature-symbol">(</span>template<span class="tsd-signature-symbol">: </span><a href="modules.html#componenttemplate" class="tsd-signature-type" data-tsd-kind="Type alias">ComponentTemplate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#component" class="tsd-signature-type" data-tsd-kind="Type alias">Component</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-type-parameters-title">Type parameters</h4>
+												<ul class="tsd-type-parameters">
+													<li>
+														<h4>T</h4>
+													</li>
+													<li>
+														<h4>P = <span class="tsd-signature-type">any</span></h4>
+													</li>
+												</ul>
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>template: <a href="modules.html#componenttemplate" class="tsd-signature-type" data-tsd-kind="Type alias">ComponentTemplate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <a href="modules.html#component" class="tsd-signature-type" data-tsd-kind="Type alias">Component</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>has<wbr>Component<span class="tsd-signature-symbol">: </span>&lt;T, P&gt;<span class="tsd-signature-symbol">(</span>template<span class="tsd-signature-symbol">: </span><a href="modules.html#componenttemplate" class="tsd-signature-type" data-tsd-kind="Type alias">ComponentTemplate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal tsd-has-type-parameter">
+											<li class="tsd-signature tsd-kind-icon">&lt;T, P&gt;<span class="tsd-signature-symbol">(</span>template<span class="tsd-signature-symbol">: </span><a href="modules.html#componenttemplate" class="tsd-signature-type" data-tsd-kind="Type alias">ComponentTemplate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-type-parameters-title">Type parameters</h4>
+												<ul class="tsd-type-parameters">
+													<li>
+														<h4>T</h4>
+													</li>
+													<li>
+														<h4>P = <span class="tsd-signature-type">unknown</span></h4>
+													</li>
+												</ul>
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>template: <a href="modules.html#componenttemplate" class="tsd-signature-type" data-tsd-kind="Type alias">ComponentTemplate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="entitymanager" class="tsd-anchor"></a>
+					<h3>Entity<wbr>Manager</h3>
+					<div class="tsd-signature tsd-kind-icon">Entity<wbr>Manager<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>addComponent<span class="tsd-signature-symbol">: </span>&lt;T&gt;<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a>, component<span class="tsd-signature-symbol">: </span><a href="modules.html#component" class="tsd-signature-type" data-tsd-kind="Type alias">Component</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span>addEntities<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>entities<span class="tsd-signature-symbol">: </span><a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span>addEntity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span>entities<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>getEntities<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>type<span class="tsd-signature-symbol">: </span><a href="modules.html#componenttemplate" class="tsd-signature-type" data-tsd-kind="Type alias">ComponentTemplate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>getEntity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>type<span class="tsd-signature-symbol">: </span><a href="modules.html#componenttemplate" class="tsd-signature-type" data-tsd-kind="Type alias">ComponentTemplate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a><span class="tsd-signature-symbol">; </span>getEntityById<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a><span class="tsd-signature-symbol">; </span>removeComponent<span class="tsd-signature-symbol">: </span>&lt;T, P&gt;<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a>, component<span class="tsd-signature-symbol">: </span><a href="modules.html#component" class="tsd-signature-type" data-tsd-kind="Type alias">Component</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="modules.html#componenttemplate" class="tsd-signature-type" data-tsd-kind="Type alias">ComponentTemplate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span>removeEntity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span>runTasks<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/jahed/ts-ecs/blob/aa5adcf/src/types.ts#L36">types.ts:36</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>add<wbr>Component<span class="tsd-signature-symbol">: </span>&lt;T&gt;<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a>, component<span class="tsd-signature-symbol">: </span><a href="modules.html#component" class="tsd-signature-type" data-tsd-kind="Type alias">Component</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal tsd-has-type-parameter">
+											<li class="tsd-signature tsd-kind-icon">&lt;T&gt;<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a>, component<span class="tsd-signature-symbol">: </span><a href="modules.html#component" class="tsd-signature-type" data-tsd-kind="Type alias">Component</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-type-parameters-title">Type parameters</h4>
+												<ul class="tsd-type-parameters">
+													<li>
+														<h4>T</h4>
+													</li>
+												</ul>
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>entity: <a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a></h5>
+													</li>
+													<li>
+														<h5>component: <a href="modules.html#component" class="tsd-signature-type" data-tsd-kind="Type alias">Component</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>add<wbr>Entities<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>entities<span class="tsd-signature-symbol">: </span><a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>entities<span class="tsd-signature-symbol">: </span><a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>entities: <a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a><span class="tsd-signature-symbol">[]</span></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>add<wbr>Entity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>entity: <a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>entities<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a><span class="tsd-signature-symbol">&gt;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>get<wbr>Entities<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>type<span class="tsd-signature-symbol">: </span><a href="modules.html#componenttemplate" class="tsd-signature-type" data-tsd-kind="Type alias">ComponentTemplate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a><span class="tsd-signature-symbol">[]</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>type<span class="tsd-signature-symbol">: </span><a href="modules.html#componenttemplate" class="tsd-signature-type" data-tsd-kind="Type alias">ComponentTemplate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a><span class="tsd-signature-symbol">[]</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>type: <a href="modules.html#componenttemplate" class="tsd-signature-type" data-tsd-kind="Type alias">ComponentTemplate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a><span class="tsd-signature-symbol">[]</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>get<wbr>Entity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>type<span class="tsd-signature-symbol">: </span><a href="modules.html#componenttemplate" class="tsd-signature-type" data-tsd-kind="Type alias">ComponentTemplate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>type<span class="tsd-signature-symbol">: </span><a href="modules.html#componenttemplate" class="tsd-signature-type" data-tsd-kind="Type alias">ComponentTemplate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>type: <a href="modules.html#componenttemplate" class="tsd-signature-type" data-tsd-kind="Type alias">ComponentTemplate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>get<wbr>Entity<wbr>ById<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>id: <span class="tsd-signature-type">string</span></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>remove<wbr>Component<span class="tsd-signature-symbol">: </span>&lt;T, P&gt;<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a>, component<span class="tsd-signature-symbol">: </span><a href="modules.html#component" class="tsd-signature-type" data-tsd-kind="Type alias">Component</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="modules.html#componenttemplate" class="tsd-signature-type" data-tsd-kind="Type alias">ComponentTemplate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal tsd-has-type-parameter">
+											<li class="tsd-signature tsd-kind-icon">&lt;T, P&gt;<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a>, component<span class="tsd-signature-symbol">: </span><a href="modules.html#component" class="tsd-signature-type" data-tsd-kind="Type alias">Component</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="modules.html#componenttemplate" class="tsd-signature-type" data-tsd-kind="Type alias">ComponentTemplate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-type-parameters-title">Type parameters</h4>
+												<ul class="tsd-type-parameters">
+													<li>
+														<h4>T</h4>
+													</li>
+													<li>
+														<h4>P = <span class="tsd-signature-type">any</span></h4>
+													</li>
+												</ul>
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>entity: <a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a></h5>
+													</li>
+													<li>
+														<h5>component: <a href="modules.html#component" class="tsd-signature-type" data-tsd-kind="Type alias">Component</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="modules.html#componenttemplate" class="tsd-signature-type" data-tsd-kind="Type alias">ComponentTemplate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>remove<wbr>Entity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>entity: <a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>run<wbr>Tasks<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="milliseconds" class="tsd-anchor"></a>
+					<h3>Milliseconds</h3>
+					<div class="tsd-signature tsd-kind-icon">Milliseconds<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/jahed/ts-ecs/blob/aa5adcf/src/types.ts#L1">types.ts:1</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="space" class="tsd-anchor"></a>
+					<h3>Space</h3>
+					<div class="tsd-signature tsd-kind-icon">Space<span class="tsd-signature-symbol">:</span> <a href="modules.html#system" class="tsd-signature-type" data-tsd-kind="Type alias">System</a><span class="tsd-signature-symbol"> &amp; </span><a href="modules.html#ecs" class="tsd-signature-type" data-tsd-kind="Type alias">ECS</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/jahed/ts-ecs/blob/aa5adcf/src/types.ts#L64">types.ts:64</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="system" class="tsd-anchor"></a>
+					<h3>System</h3>
+					<div class="tsd-signature tsd-kind-icon">System<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>added<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>ecs<span class="tsd-signature-symbol">: </span><a href="modules.html#ecs" class="tsd-signature-type" data-tsd-kind="Type alias">ECS</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span>disabled<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>ecs<span class="tsd-signature-symbol">: </span><a href="modules.html#ecs" class="tsd-signature-type" data-tsd-kind="Type alias">ECS</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span>enabled<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>ecs<span class="tsd-signature-symbol">: </span><a href="modules.html#ecs" class="tsd-signature-type" data-tsd-kind="Type alias">ECS</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>removed<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>ecs<span class="tsd-signature-symbol">: </span><a href="modules.html#ecs" class="tsd-signature-type" data-tsd-kind="Type alias">ECS</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span>update<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>ecs<span class="tsd-signature-symbol">: </span><a href="modules.html#ecs" class="tsd-signature-type" data-tsd-kind="Type alias">ECS</a>, elapsedMS<span class="tsd-signature-symbol">: </span><a href="modules.html#milliseconds" class="tsd-signature-type" data-tsd-kind="Type alias">Milliseconds</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/jahed/ts-ecs/blob/aa5adcf/src/types.ts#L27">types.ts:27</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>added<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>ecs<span class="tsd-signature-symbol">: </span><a href="modules.html#ecs" class="tsd-signature-type" data-tsd-kind="Type alias">ECS</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>ecs<span class="tsd-signature-symbol">: </span><a href="modules.html#ecs" class="tsd-signature-type" data-tsd-kind="Type alias">ECS</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>ecs: <a href="modules.html#ecs" class="tsd-signature-type" data-tsd-kind="Type alias">ECS</a></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>disabled<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>ecs<span class="tsd-signature-symbol">: </span><a href="modules.html#ecs" class="tsd-signature-type" data-tsd-kind="Type alias">ECS</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>ecs<span class="tsd-signature-symbol">: </span><a href="modules.html#ecs" class="tsd-signature-type" data-tsd-kind="Type alias">ECS</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>ecs: <a href="modules.html#ecs" class="tsd-signature-type" data-tsd-kind="Type alias">ECS</a></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>enabled<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>ecs<span class="tsd-signature-symbol">: </span><a href="modules.html#ecs" class="tsd-signature-type" data-tsd-kind="Type alias">ECS</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>ecs<span class="tsd-signature-symbol">: </span><a href="modules.html#ecs" class="tsd-signature-type" data-tsd-kind="Type alias">ECS</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>ecs: <a href="modules.html#ecs" class="tsd-signature-type" data-tsd-kind="Type alias">ECS</a></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>removed<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>ecs<span class="tsd-signature-symbol">: </span><a href="modules.html#ecs" class="tsd-signature-type" data-tsd-kind="Type alias">ECS</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>ecs<span class="tsd-signature-symbol">: </span><a href="modules.html#ecs" class="tsd-signature-type" data-tsd-kind="Type alias">ECS</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>ecs: <a href="modules.html#ecs" class="tsd-signature-type" data-tsd-kind="Type alias">ECS</a></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>update<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>ecs<span class="tsd-signature-symbol">: </span><a href="modules.html#ecs" class="tsd-signature-type" data-tsd-kind="Type alias">ECS</a>, elapsedMS<span class="tsd-signature-symbol">: </span><a href="modules.html#milliseconds" class="tsd-signature-type" data-tsd-kind="Type alias">Milliseconds</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>ecs<span class="tsd-signature-symbol">: </span><a href="modules.html#ecs" class="tsd-signature-type" data-tsd-kind="Type alias">ECS</a>, elapsedMS<span class="tsd-signature-symbol">: </span><a href="modules.html#milliseconds" class="tsd-signature-type" data-tsd-kind="Type alias">Milliseconds</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>ecs: <a href="modules.html#ecs" class="tsd-signature-type" data-tsd-kind="Type alias">ECS</a></h5>
+													</li>
+													<li>
+														<h5>elapsedMS: <a href="modules.html#milliseconds" class="tsd-signature-type" data-tsd-kind="Type alias">Milliseconds</a></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="systemmanager" class="tsd-anchor"></a>
+					<h3>System<wbr>Manager</h3>
+					<div class="tsd-signature tsd-kind-icon">System<wbr>Manager<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>addSystem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>system<span class="tsd-signature-symbol">: </span><a href="modules.html#system" class="tsd-signature-type" data-tsd-kind="Type alias">System</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span>disableSystem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>system<span class="tsd-signature-symbol">: </span><a href="modules.html#system" class="tsd-signature-type" data-tsd-kind="Type alias">System</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span>enableSystem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>system<span class="tsd-signature-symbol">: </span><a href="modules.html#system" class="tsd-signature-type" data-tsd-kind="Type alias">System</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span>enabledSystems<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="modules.html#system" class="tsd-signature-type" data-tsd-kind="Type alias">System</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>removeSystem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>system<span class="tsd-signature-symbol">: </span><a href="modules.html#system" class="tsd-signature-type" data-tsd-kind="Type alias">System</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span>runTasks<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span>systems<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="modules.html#system" class="tsd-signature-type" data-tsd-kind="Type alias">System</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/jahed/ts-ecs/blob/aa5adcf/src/types.ts#L52">types.ts:52</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>add<wbr>System<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>system<span class="tsd-signature-symbol">: </span><a href="modules.html#system" class="tsd-signature-type" data-tsd-kind="Type alias">System</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>system<span class="tsd-signature-symbol">: </span><a href="modules.html#system" class="tsd-signature-type" data-tsd-kind="Type alias">System</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>system: <a href="modules.html#system" class="tsd-signature-type" data-tsd-kind="Type alias">System</a></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>disable<wbr>System<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>system<span class="tsd-signature-symbol">: </span><a href="modules.html#system" class="tsd-signature-type" data-tsd-kind="Type alias">System</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>system<span class="tsd-signature-symbol">: </span><a href="modules.html#system" class="tsd-signature-type" data-tsd-kind="Type alias">System</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>system: <a href="modules.html#system" class="tsd-signature-type" data-tsd-kind="Type alias">System</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>enable<wbr>System<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>system<span class="tsd-signature-symbol">: </span><a href="modules.html#system" class="tsd-signature-type" data-tsd-kind="Type alias">System</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>system<span class="tsd-signature-symbol">: </span><a href="modules.html#system" class="tsd-signature-type" data-tsd-kind="Type alias">System</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>system: <a href="modules.html#system" class="tsd-signature-type" data-tsd-kind="Type alias">System</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>enabled<wbr>Systems<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="modules.html#system" class="tsd-signature-type" data-tsd-kind="Type alias">System</a><span class="tsd-signature-symbol">&gt;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>remove<wbr>System<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>system<span class="tsd-signature-symbol">: </span><a href="modules.html#system" class="tsd-signature-type" data-tsd-kind="Type alias">System</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>system<span class="tsd-signature-symbol">: </span><a href="modules.html#system" class="tsd-signature-type" data-tsd-kind="Type alias">System</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>system: <a href="modules.html#system" class="tsd-signature-type" data-tsd-kind="Type alias">System</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>run<wbr>Tasks<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>systems<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="modules.html#system" class="tsd-signature-type" data-tsd-kind="Type alias">System</a><span class="tsd-signature-symbol">&gt;</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="task" class="tsd-anchor"></a>
+					<h3>Task</h3>
+					<div class="tsd-signature tsd-kind-icon">Task<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/jahed/ts-ecs/blob/aa5adcf/src/types.ts#L3">types.ts:3</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="tasks" class="tsd-anchor"></a>
+					<h3>Tasks</h3>
+					<div class="tsd-signature tsd-kind-icon">Tasks<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="modules.html#task" class="tsd-signature-type" data-tsd-kind="Type alias">Task</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/jahed/ts-ecs/blob/aa5adcf/src/types.ts#L4">types.ts:4</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="createcomponent" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> create<wbr>Component</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Component&lt;T, P&gt;<span class="tsd-signature-symbol">(</span>template<span class="tsd-signature-symbol">: </span><a href="modules.html#componenttemplate" class="tsd-signature-type" data-tsd-kind="Type alias">ComponentTemplate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span>, props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#component" class="tsd-signature-type" data-tsd-kind="Type alias">Component</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/jahed/ts-ecs/blob/aa5adcf/src/component.ts#L10">component.ts:10</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+								<li>
+									<h4>P</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>template: <a href="modules.html#componenttemplate" class="tsd-signature-type" data-tsd-kind="Type alias">ComponentTemplate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>props: <span class="tsd-signature-type">P</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#component" class="tsd-signature-type" data-tsd-kind="Type alias">Component</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="createengine" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> create<wbr>Engine</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Engine<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#engine" class="tsd-signature-type" data-tsd-kind="Type alias">Engine</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/jahed/ts-ecs/blob/aa5adcf/src/engine.ts#L5">engine.ts:5</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#engine" class="tsd-signature-type" data-tsd-kind="Type alias">Engine</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="createentity" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> create<wbr>Entity</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Entity<span class="tsd-signature-symbol">(</span>idTemplate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/jahed/ts-ecs/blob/aa5adcf/src/entity.ts#L3">entity.ts:3</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>idTemplate: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#entity" class="tsd-signature-type" data-tsd-kind="Type alias">Entity</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="createspace" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> create<wbr>Space</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Space<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CreateSpaceArgs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#space" class="tsd-signature-type" data-tsd-kind="Type alias">Space</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/jahed/ts-ecs/blob/aa5adcf/src/space.ts#L13">space.ts:13</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-type">CreateSpaceArgs</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#space" class="tsd-signature-type" data-tsd-kind="Type alias">Space</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="createsystem" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> create<wbr>System</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>System<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CreateSystemArgs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#system" class="tsd-signature-type" data-tsd-kind="Type alias">System</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/jahed/ts-ecs/blob/aa5adcf/src/system.ts#L12">system.ts:12</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-type">CreateSystemArgs</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#system" class="tsd-signature-type" data-tsd-kind="Type alias">System</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="definecomponent" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> define<wbr>Component</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">define<wbr>Component&lt;T, P&gt;<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, factory<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#componenttemplate" class="tsd-signature-type" data-tsd-kind="Type alias">ComponentTemplate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/jahed/ts-ecs/blob/aa5adcf/src/component.ts#L3">component.ts:3</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+								<li>
+									<h4>P = <span class="tsd-signature-type">undefined</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>factory: <span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">T</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>props: <span class="tsd-signature-type">P</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#componenttemplate" class="tsd-signature-type" data-tsd-kind="Type alias">ComponentTemplate</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="current ">
+						<a href="modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#component" class="tsd-kind-icon">Component</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#componenttemplate" class="tsd-kind-icon">Component<wbr>Template</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#ecs" class="tsd-kind-icon">ECS</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#engine" class="tsd-kind-icon">Engine</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#entity" class="tsd-kind-icon">Entity</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#entitymanager" class="tsd-kind-icon">Entity<wbr>Manager</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#milliseconds" class="tsd-kind-icon">Milliseconds</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#space" class="tsd-kind-icon">Space</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#system" class="tsd-kind-icon">System</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#systemmanager" class="tsd-kind-icon">System<wbr>Manager</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#task" class="tsd-kind-icon">Task</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#tasks" class="tsd-kind-icon">Tasks</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#createcomponent" class="tsd-kind-icon">create<wbr>Component</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createengine" class="tsd-kind-icon">create<wbr>Engine</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createentity" class="tsd-kind-icon">create<wbr>Entity</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createspace" class="tsd-kind-icon">create<wbr>Space</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createsystem" class="tsd-kind-icon">create<wbr>System</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#definecomponent" class="tsd-kind-icon">define<wbr>Component</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

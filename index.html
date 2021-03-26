@@ -1,0 +1,279 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>@jahed/ts-ecs</title>
+	<meta name="description" content="Documentation for @jahed/ts-ecs">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">@jahed/ts-ecs</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>@jahed/ts-ecs</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#ts-ecs" id="ts-ecs" style="color: inherit; text-decoration: none;">
+					<h1>ts-ecs</h1>
+				</a>
+				<p><a href="https://www.npmjs.com/package/@jahed/ts-ecs"><img src="https://img.shields.io/npm/v/@jahed/ts-ecs.svg" alt="npm"></a>
+				<a href="https://www.patreon.com/jahed"><img src="https://img.shields.io/badge/patreon-donate-f96854.svg" alt="Patreon"></a></p>
+				<p>Experimental ECS Framework for TypeScript.</p>
+				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+					<h2>Installation</h2>
+				</a>
+				<pre><code><span style="color: #001080">npm</span><span style="color: #000000"> </span><span style="color: #001080">install</span><span style="color: #000000"> @</span><span style="color: #001080">jahed</span><span style="color: #000000">/</span><span style="color: #001080">ts</span><span style="color: #000000">-</span><span style="color: #001080">ecs</span>
+</code></pre>
+				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+					<h2>Usage</h2>
+				</a>
+				<p>A thorough example might be provided in the future. For now, here&#39;s a simple
+				one.</p>
+				<pre><code class="language-ts"><span style="color: #008000">/*</span>
+<span style="color: #008000"> * Component Definitions are used to create and find components</span>
+<span style="color: #008000"> */</span>
+
+<span style="color: #AF00DB">export</span><span style="color: #000000"> </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">withPosition</span><span style="color: #000000"> = </span><span style="color: #795E26">defineComponent</span><span style="color: #000000">(</span>
+<span style="color: #000000">  </span><span style="color: #A31515">&#039;Position&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  (</span><span style="color: #001080">position</span><span style="color: #000000">: </span><span style="color: #267F99">Position</span><span style="color: #000000">): </span><span style="color: #267F99">Position</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">position</span>
+<span style="color: #000000">)</span>
+
+<span style="color: #AF00DB">export</span><span style="color: #000000"> </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">withRadius</span><span style="color: #000000"> = </span><span style="color: #795E26">defineComponent</span><span style="color: #000000">(</span>
+<span style="color: #000000">  </span><span style="color: #A31515">&#039;Radius&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  (</span><span style="color: #001080">radius</span><span style="color: #000000">: </span><span style="color: #267F99">number</span><span style="color: #000000">): </span><span style="color: #267F99">number</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">radius</span>
+<span style="color: #000000">)</span>
+
+<span style="color: #008000">/*</span>
+<span style="color: #008000"> * Systems are used to query and modify components.</span>
+<span style="color: #008000"> */</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #795E26">createRenderSystem</span><span style="color: #000000"> = (</span><span style="color: #001080">app</span><span style="color: #000000">: </span><span style="color: #267F99">Application</span><span style="color: #000000">): </span><span style="color: #267F99">System</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">  </span><span style="color: #AF00DB">return</span><span style="color: #000000"> </span><span style="color: #795E26">createSystem</span><span style="color: #000000">({</span>
+<span style="color: #000000">    </span><span style="color: #001080">id:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;renderSystem&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #795E26">update</span><span style="color: #001080">:</span><span style="color: #000000"> (</span><span style="color: #001080">ecs</span><span style="color: #000000">, </span><span style="color: #001080">elapsedMS</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">      </span><span style="color: #008000">/*</span>
+<span style="color: #008000">       * Query entities that share common components.</span>
+<span style="color: #008000">       */</span>
+<span style="color: #000000">      </span><span style="color: #AF00DB">for</span><span style="color: #000000"> (</span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">entity</span><span style="color: #000000"> </span><span style="color: #0000FF">of</span><span style="color: #000000"> </span><span style="color: #001080">ecs</span><span style="color: #000000">.</span><span style="color: #795E26">getEntities</span><span style="color: #000000">(</span><span style="color: #001080">withPosition</span><span style="color: #000000">, </span><span style="color: #001080">withRadius</span><span style="color: #000000">)) {</span>
+<span style="color: #000000">        </span><span style="color: #0000FF">const</span><span style="color: #000000"> { </span><span style="color: #001080">data</span><span style="color: #000000">: { </span><span style="color: #0070C1">x</span><span style="color: #000000">, </span><span style="color: #0070C1">y</span><span style="color: #000000"> } } = </span><span style="color: #001080">entity</span><span style="color: #000000">.</span><span style="color: #795E26">getComponent</span><span style="color: #000000">(</span><span style="color: #001080">withPosition</span><span style="color: #000000">)</span>
+<span style="color: #000000">        </span><span style="color: #0000FF">const</span><span style="color: #000000"> { </span><span style="color: #001080">data</span><span style="color: #000000">: </span><span style="color: #0070C1">radius</span><span style="color: #000000"> } = </span><span style="color: #001080">entity</span><span style="color: #000000">.</span><span style="color: #795E26">getComponent</span><span style="color: #000000">(</span><span style="color: #001080">withRadius</span><span style="color: #000000">)</span>
+<span style="color: #000000">        </span><span style="color: #001080">app</span><span style="color: #000000">.</span><span style="color: #795E26">drawCircle</span><span style="color: #000000">(</span><span style="color: #001080">x</span><span style="color: #000000">, </span><span style="color: #001080">y</span><span style="color: #000000">, </span><span style="color: #001080">radius</span><span style="color: #000000">)</span>
+<span style="color: #000000">      }</span>
+<span style="color: #000000">    }</span>
+<span style="color: #000000">  })</span>
+<span style="color: #000000">}</span>
+
+<span style="color: #AF00DB">export</span><span style="color: #000000"> </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #795E26">createTitleSystem</span><span style="color: #000000"> = (</span><span style="color: #795E26">onStartGame</span><span style="color: #000000">: () </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #267F99">void</span><span style="color: #000000">): </span><span style="color: #267F99">System</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">  </span><span style="color: #AF00DB">return</span><span style="color: #000000"> </span><span style="color: #795E26">createSystem</span><span style="color: #000000">({</span>
+<span style="color: #000000">    </span><span style="color: #001080">id:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;TitleSystem&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #795E26">update</span><span style="color: #001080">:</span><span style="color: #000000"> (</span><span style="color: #001080">ecs</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">      </span><span style="color: #AF00DB">if</span><span style="color: #000000"> (</span><span style="color: #008000">/* input logic */</span><span style="color: #000000">) {</span>
+<span style="color: #000000">        </span><span style="color: #795E26">onStartGame</span><span style="color: #000000">()</span>
+<span style="color: #000000">      }</span>
+<span style="color: #000000">    }</span>
+<span style="color: #000000">  })</span>
+<span style="color: #000000">}</span>
+
+<span style="color: #008000">/*</span>
+<span style="color: #008000"> * Spaces are used to group entities, components and systems together</span>
+<span style="color: #008000"> */</span>
+
+<span style="color: #AF00DB">export</span><span style="color: #000000"> </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #795E26">createTitleSpace</span><span style="color: #000000"> = (</span>
+<span style="color: #000000">  </span><span style="color: #001080">app</span><span style="color: #000000">: </span><span style="color: #267F99">Application</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #795E26">onStartGame</span><span style="color: #000000">: () </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #267F99">void</span>
+<span style="color: #000000">): </span><span style="color: #267F99">Space</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">  </span><span style="color: #008000">/*</span>
+<span style="color: #008000">   * Entities are a grouping of components.</span>
+<span style="color: #008000">   */</span>
+<span style="color: #000000">  </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">logo</span><span style="color: #000000"> = </span><span style="color: #795E26">createEntity</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;logo&#039;</span><span style="color: #000000">)</span>
+<span style="color: #000000">    .</span><span style="color: #795E26">addComponent</span><span style="color: #000000">(</span><span style="color: #795E26">createComponent</span><span style="color: #000000">(</span><span style="color: #001080">withPosition</span><span style="color: #000000">, { </span><span style="color: #001080">x:</span><span style="color: #000000"> </span><span style="color: #098658">10</span><span style="color: #000000">, </span><span style="color: #001080">y:</span><span style="color: #000000"> </span><span style="color: #098658">10</span><span style="color: #000000"> }))</span>
+<span style="color: #000000">    .</span><span style="color: #795E26">addComponent</span><span style="color: #000000">(</span><span style="color: #795E26">createComponent</span><span style="color: #000000">(</span><span style="color: #001080">withRadius</span><span style="color: #000000">, </span><span style="color: #098658">5</span><span style="color: #000000">))</span>
+
+<span style="color: #000000">  </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">space</span><span style="color: #000000"> = </span><span style="color: #795E26">createSpace</span><span style="color: #000000">({ </span><span style="color: #001080">id:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;title&#039;</span><span style="color: #000000"> })</span>
+<span style="color: #000000">  </span><span style="color: #001080">space</span><span style="color: #000000">.</span><span style="color: #795E26">addSystem</span><span style="color: #000000">(</span><span style="color: #795E26">createRenderSystem</span><span style="color: #000000">(</span><span style="color: #001080">app</span><span style="color: #000000">))</span>
+<span style="color: #000000">  </span><span style="color: #001080">space</span><span style="color: #000000">.</span><span style="color: #795E26">addSystem</span><span style="color: #000000">(</span><span style="color: #795E26">createTitleSystem</span><span style="color: #000000">(</span><span style="color: #001080">onStartGame</span><span style="color: #000000">))</span>
+<span style="color: #000000">  </span><span style="color: #001080">space</span><span style="color: #000000">.</span><span style="color: #795E26">addEntity</span><span style="color: #000000">(</span><span style="color: #001080">logo</span><span style="color: #000000">)</span>
+<span style="color: #000000">  </span><span style="color: #AF00DB">return</span><span style="color: #000000"> </span><span style="color: #001080">space</span>
+<span style="color: #000000">}</span>
+
+
+<span style="color: #AF00DB">export</span><span style="color: #000000"> </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #795E26">createBattleSpace</span><span style="color: #000000"> = (</span>
+<span style="color: #000000">  </span><span style="color: #001080">app</span><span style="color: #000000">: </span><span style="color: #267F99">Application</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #795E26">onBattleEnd</span><span style="color: #000000">: () </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #267F99">void</span>
+<span style="color: #000000">): </span><span style="color: #267F99">Space</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">  </span><span style="color: #008000">// similar to createTitleSpace</span>
+<span style="color: #000000">}</span>
+
+<span style="color: #008000">/*</span>
+<span style="color: #008000"> * An &quot;app&quot; can be any rendering framework. e.g. pixi.js.</span>
+<span style="color: #008000"> */</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">app</span><span style="color: #000000"> = </span><span style="color: #795E26">createApp</span><span style="color: #000000">();</span>
+
+<span style="color: #008000">/*</span>
+<span style="color: #008000"> * The Engine decided which systems execute and when.</span>
+<span style="color: #008000"> */</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">engine</span><span style="color: #000000"> = </span><span style="color: #795E26">createEngine</span><span style="color: #000000">();</span>
+
+<span style="color: #008000">/*</span>
+<span style="color: #008000"> * Let&#039;s tie the spaces together so we can transition from one to the other and</span>
+<span style="color: #008000"> * back.</span>
+<span style="color: #008000"> */</span>
+<span style="color: #795E26">createTitleSpace</span><span style="color: #000000">(</span><span style="color: #001080">app</span><span style="color: #000000">, () </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">  </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">battleSpace</span><span style="color: #000000"> = </span><span style="color: #795E26">createBattleSpace</span><span style="color: #000000">(</span><span style="color: #001080">app</span><span style="color: #000000">, () </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #001080">engine</span><span style="color: #000000">.</span><span style="color: #795E26">removeSystem</span><span style="color: #000000">(</span><span style="color: #001080">battleSpace</span><span style="color: #000000">)</span>
+<span style="color: #000000">    </span><span style="color: #001080">engine</span><span style="color: #000000">.</span><span style="color: #795E26">addSystem</span><span style="color: #000000">(</span><span style="color: #001080">titleSpace</span><span style="color: #000000">)</span>
+<span style="color: #000000">  })</span>
+
+<span style="color: #000000">  </span><span style="color: #001080">engine</span><span style="color: #000000">.</span><span style="color: #795E26">removeSystem</span><span style="color: #000000">(</span><span style="color: #001080">titleSpace</span><span style="color: #000000">)</span>
+<span style="color: #000000">  </span><span style="color: #001080">engine</span><span style="color: #000000">.</span><span style="color: #795E26">addSystem</span><span style="color: #000000">(</span><span style="color: #001080">battleSpace</span><span style="color: #000000">)</span>
+<span style="color: #000000">})</span>
+
+<span style="color: #001080">engine</span><span style="color: #000000">.</span><span style="color: #795E26">addSystem</span><span style="color: #000000">(</span><span style="color: #001080">titleSpace</span><span style="color: #000000">)</span>
+
+<span style="color: #008000">/*</span>
+<span style="color: #008000"> * Now we can update everything on each tick.</span>
+<span style="color: #008000"> */</span>
+<span style="color: #001080">app</span><span style="color: #000000">.</span><span style="color: #001080">ticker</span><span style="color: #000000">.</span><span style="color: #795E26">add</span><span style="color: #000000">(() </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">engine</span><span style="color: #000000">.</span><span style="color: #795E26">update</span><span style="color: #000000">(</span><span style="color: #001080">app</span><span style="color: #000000">.</span><span style="color: #001080">ticker</span><span style="color: #000000">.</span><span style="color: #001080">elapsedMS</span><span style="color: #000000">))</span>
+</code></pre>
+				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
+					<h2>License</h2>
+				</a>
+				<p>Copyright (C) 2020 Jahed Ahmed</p>
+				<p>This program is free software: you can redistribute it and/or modify it under
+					the terms of the GNU Affero General Public License as published by the Free
+				Software Foundation, either version 3 of the License, or any later version.</p>
+				<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY
+					WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+				PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.</p>
+				<p>You should have received a copy of the GNU Affero General Public License along
+				with this program. If not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>.</p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#component" class="tsd-kind-icon">Component</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#componenttemplate" class="tsd-kind-icon">Component<wbr>Template</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#ecs" class="tsd-kind-icon">ECS</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#engine" class="tsd-kind-icon">Engine</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#entity" class="tsd-kind-icon">Entity</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#entitymanager" class="tsd-kind-icon">Entity<wbr>Manager</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#milliseconds" class="tsd-kind-icon">Milliseconds</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#space" class="tsd-kind-icon">Space</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#system" class="tsd-kind-icon">System</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#systemmanager" class="tsd-kind-icon">System<wbr>Manager</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#task" class="tsd-kind-icon">Task</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#tasks" class="tsd-kind-icon">Tasks</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#createcomponent" class="tsd-kind-icon">create<wbr>Component</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createengine" class="tsd-kind-icon">create<wbr>Engine</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createentity" class="tsd-kind-icon">create<wbr>Entity</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createspace" class="tsd-kind-icon">create<wbr>Space</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#createsystem" class="tsd-kind-icon">create<wbr>System</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#definecomponent" class="tsd-kind-icon">define<wbr>Component</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
