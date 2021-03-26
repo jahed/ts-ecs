@@ -1,0 +1,29 @@
+# Operating System
+.DS_Store
+
+# IDE
+.idea/*
+!.idea/runConfigurations
+.vscode
+
+# Temporary
+.cache
+.tmp
+scratch
+
+*.swp
+*.log*
+
+# Dependencies
+node_modules
+
+# Build
+build
+dist
+lib
+docs
+
+# Individual-level Configuration
+*.env
+.config/*
+!.config/app.environment.config.json.sample

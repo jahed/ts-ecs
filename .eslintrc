@@ -1,0 +1,52 @@
+{
+  "overrides": [
+    {
+      "files": [
+        "*.ts"
+      ],
+      "extends": [
+        "plugin:@typescript-eslint/recommended"
+      ],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "project": [
+          "./tsconfig.json",
+          "./packages/**/tsconfig.json"
+        ]
+      },
+      "rules": {
+        /* conflicts with @typescript-eslint/no-use-before-define */
+        "no-use-before-define": "off",
+        /* enforce consistent delimeters for types and arrays/objects */
+        "@typescript-eslint/member-delimiter-style": [
+          "error",
+          {
+            "multiline": {
+              "delimiter": "comma",
+              "requireLast": false
+            },
+            "singleline": {
+              "delimiter": "comma",
+              "requireLast": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "files": [
+        "*.test.js",
+        "*.test.ts"
+      ],
+      "env": {
+        "jest": true
+      }
+    }
+  ],
+  "ignorePatterns": [
+    "node_modules",
+    "build",
+    "lib",
+    "scratch"
+  ]
+}

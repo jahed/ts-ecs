@@ -1,0 +1,51 @@
+{
+  "name": "@jahed/ts-ecs",
+  "version": "0.1.0",
+  "description": "Experimental ECS Framework for TypeScript",
+  "author": "Jahed Ahmed <jahed.public@gmail.com>",
+  "license": "AGPL-3.0-or-later",
+  "homepage": "https://github.com/jahed/ts-ecs",
+  "repository": "https://github.com/jahed/ts-ecs.git",
+  "bugs": "https://github.com/jahed/ts-ecs/issues",
+  "keywords": [
+    "ecs",
+    "gamedev",
+    "game"
+  ],
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "es",
+    "docs"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "lint:eslint": "eslint \"**/*.ts\" --cache --cache-location '.cache/eslint/.eslintcache'",
+    "lint:tsc": "tsc --noEmit",
+    "lint": "npm-run-all --parallel --continue-on-error --aggregate-output lint:**",
+    "test": "jest",
+    "build:lib": "rimraf lib && tsc",
+    "build:es": "rimraf es && tsc --outDir ./es/ --target es6 --module es6",
+    "build:docs": "rimraf docs && typedoc --out docs src/index.ts",
+    "push:git": "git push && git push --tags",
+    "push:docs": "bash -i ./publish-docs.sh",
+    "ready": "yarn lint && yarn test && yarn build:lib && yarn build:es && yarn build:docs",
+    "deploy": "yarn ready && yarn publish && yarn push:git && yarn push:docs",
+    "deps": "yarn upgrade-interactive --latest && yarn upgrade && git add yarn.lock '*package.json' && git commit -m 'build(deps): upgrade dependencies'"
+  },
+  "devDependencies": {
+    "@types/jest": "26.0.22",
+    "@types/node": "14.14.36",
+    "@typescript-eslint/eslint-plugin": "4.19.0",
+    "@typescript-eslint/parser": "4.19.0",
+    "eslint": "7.23.0",
+    "jest": "26.6.3",
+    "npm-run-all": "4.1.5",
+    "rimraf": "3.0.2",
+    "ts-jest": "26.5.4",
+    "typedoc": "0.20.34",
+    "typescript": "4.2.3"
+  }
+}

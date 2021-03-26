@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "react",
+    "sourceMap": true,
+    "noEmit": true,
+    "incremental": true,
+    "tsBuildInfoFile": ".cache/typescript/.tsbuildinfo"
+  }
+}
