@@ -1,7 +1,7 @@
 # ts-ecs
 
 [![npm](https://img.shields.io/npm/v/@jahed/ts-ecs.svg)](https://www.npmjs.com/package/@jahed/ts-ecs)
-[![Patreon](https://img.shields.io/badge/patreon-donate-f96854.svg)](https://www.patreon.com/jahed)
+[![author](https://img.shields.io/badge/author-jahed-%23007fff)](https://jahed.dev/)
 
 Experimental ECS Framework for TypeScript.
 
